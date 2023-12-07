@@ -6,11 +6,11 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:14:53 by acroue            #+#    #+#             */
-/*   Updated: 2023/12/07 15:28:56 by acroue           ###   ########.fr       */
+/*   Updated: 2023/12/07 17:10:51 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../libft.h"
 
 static int	ft_isflag(char c)
 {
