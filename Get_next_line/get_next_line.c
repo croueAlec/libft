@@ -6,7 +6,7 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 17:44:01 by acroue            #+#    #+#             */
-/*   Updated: 2023/12/07 15:14:04 by acroue           ###   ########.fr       */
+/*   Updated: 2023/12/08 13:29:17 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static int	read_buffer(int fd, char *buffer)
 	return (0);
 }
 
-static void	*ft_gnl_memmove(void *dest, const void *src, size_t n)
+void	*ft_gnl_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
