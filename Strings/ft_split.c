@@ -6,7 +6,7 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:12:51 by acroue            #+#    #+#             */
-/*   Updated: 2024/01/10 16:16:46 by acroue           ###   ########.fr       */
+/*   Updated: 2024/01/10 19:59:53 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static int	ft_next_sep(const char *str, char sep)
 	return (i);
 }
 
-char	**ft_free(char **split_array, size_t j)
+void	ft_free(char **split_array, size_t j)
 {
 	size_t	i;
 
@@ -54,7 +54,7 @@ char	**ft_free(char **split_array, size_t j)
 		i++;
 	}
 	free(split_array);
-	return (NULL);
+	return ;
 }
 
 static char	*ft_strndup(char *src, size_t n)
@@ -95,7 +95,7 @@ char	**ft_split(char const *s, char c)
 		{
 			split_array[j] = ft_strndup((char *)&s[i], ft_next_sep(&s[i], c));
 			if (!split_array[j++])
-				return (ft_free(split_array, j - 1));
+				return (ft_free(split_array, j - 1), NULL);
 			i += ft_next_sep(&s[i], c);
 		}
 	}
