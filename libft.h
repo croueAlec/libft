@@ -6,7 +6,7 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:21:36 by acroue            #+#    #+#             */
-/*   Updated: 2023/12/08 16:49:17 by acroue           ###   ########.fr       */
+/*   Updated: 2024/01/10 16:33:23 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ int		ft_putnbr_base(unsigned long long n, char *base, int is_address);
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
 int		ft_count_words(char const *s, char c);
+char	**ft_free(char **split_array, size_t j)
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strdup(const char *s);
