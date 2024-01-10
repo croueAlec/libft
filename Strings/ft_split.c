@@ -6,7 +6,7 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:12:51 by acroue            #+#    #+#             */
-/*   Updated: 2023/12/07 13:59:49 by acroue           ###   ########.fr       */
+/*   Updated: 2024/01/10 16:16:46 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,15 +43,15 @@ static int	ft_next_sep(const char *str, char sep)
 	return (i);
 }
 
-static char	**ft_free(char **split_array, size_t j)
+char	**ft_free(char **split_array, size_t j)
 {
 	size_t	i;
 
 	i = 0;
 	while (i < j)
 	{
-		free(split_array[j]);
-		j++;
+		free(split_array[i]);
+		i++;
 	}
 	free(split_array);
 	return (NULL);
