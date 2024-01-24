@@ -6,7 +6,7 @@
 /*   By: acroue <acroue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:21:36 by acroue            #+#    #+#             */
-/*   Updated: 2024/01/10 20:00:07 by acroue           ###   ########.fr       */
+/*   Updated: 2024/01/24 18:49:27 by acroue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,22 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+/* ft_is */
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+/* ft_put */
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
+/* Get_next_line */
 void	*ft_gnl_memmove(void *dest, const void *src, size_t n);
 char	*get_next_line(int fd);
 char	*super_gnl(int fd);
+/* Linked_lists */
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstclear(t_list **lst, void (*del)(void*));
@@ -55,6 +59,7 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
+/* Memory */
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
@@ -62,9 +67,13 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
+/* Numbers */
 int		ft_atoi(const char *nptr);
 long	ft_atol(const char *nptr);
 char	*ft_itoa(int n);
+int		ft_rand(void);
+int		ft_range_rand(int max);
+/* Printf */
 size_t	ft_printf(const char *format, ...);
 void	ft_print_nbr(long n);
 int		ft_put_signed(int n);
@@ -75,6 +84,8 @@ int		ft_put_hex(char *str, int len, int is_address);
 int		ft_putnbr_base(unsigned long long n, char *base, int is_address);
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
+/* Strings */
+char	*ft_sep_join(char *s1, char *s2, char *sep);
 int		ft_count_words(char const *s, char c);
 void	ft_free(char **split_array, size_t j);
 char	**ft_split(char const *s, char c);

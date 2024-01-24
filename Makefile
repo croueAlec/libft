@@ -6,7 +6,7 @@
 #    By: acroue <acroue@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/11 11:51:52 by acroue            #+#    #+#              #
-#    Updated: 2023/12/12 08:47:51 by acroue           ###   ########.fr        #
+#    Updated: 2024/01/24 18:50:25 by acroue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,12 +43,14 @@ SRCS =	ft_is/ft_isalnum.c \
 \
 		Numbers/ft_atoi.c \
 		Numbers/ft_itoa.c \
+		Numbers/ft_random.c \
 \
 		Printf/ft_printf_basic_functions.c \
 		Printf/ft_printf_hex.c \
 		Printf/ft_printf_numbers.c \
 		Printf/ft_printf.c \
 \
+		Strings/ft_sep_join.c \
 		Strings/ft_split.c \
 		Strings/ft_strlen.c \
 		Strings/ft_strlcpy.c \
